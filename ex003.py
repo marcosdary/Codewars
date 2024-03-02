@@ -1,12 +1,47 @@
-# You are given a list of unique integers arr,
-# and two integers a and b. Your task is to find 
-# out whether or not a and b appear consecutively 
-# in arr, and return a boolean value (True if a and b are consecutive, False otherwise).
-#It is guaranteed that a and b are both present in arr.
+from functools import partial
+def decorator_time(func):
+    
+    def inner_function(*args, **kwargs):
+        for arg in args:
+            validation_time(arg)
+        return func(*args, **kwargs)
+    return inner_function
 
-def consecutive(arr, a, b):
-    exit_consecutive = True if arr.index(a) + 1 == arr.index(b) or arr.index(b) + 1 == arr.index(a) else False
-    return exit_consecutive
-a, b = 3, 1
-sequence = [1, 3, 5, 7]
-output = consecutive(sequence, a, b) # consecutive([1, 3, 5, 7], 3, 1), True
+@decorator_time
+def to_pretty(seconds):
+    calculation_time = partial(lambda x, y: x / y, seconds)
+    
+    if seconds >= 604800:
+        if int(calculation_time(604800)) == 1:
+            return 'a week ago'
+        return f'{int(calculation_time(604800))} weeks ago'
+    
+    elif 86400 <= seconds < 604800:
+        if int(calculation_time(86400)) == 1:
+            return 'a day ago'
+        return f'{int(calculation_time(86400))} days ago'
+    
+    elif 3600 <= seconds < 86400:
+        if int(calculation_time(3600)) == 1:
+            return 'an hour ago'
+        return f'{int(calculation_time(3600))} hours ago'
+    
+    elif 60 <= seconds < 3600:
+        if int(calculation_time(60)) == 1:
+            return 'a minute ago'
+        return f'{int(calculation_time(60))} minutes ago'
+    
+    elif 0 < seconds < 60:
+        if seconds == 1:
+            return 'a second ago'
+        else:
+            return f'{int(seconds)} seconds ago'
+        
+    return "just now"
+    
+def validation_time(time):
+    if time < 0:
+        raise TypeError("Não existe valores negativos para o tempo")
+    
+time_seconds = 3600
+print(to_pretty(time_seconds))
