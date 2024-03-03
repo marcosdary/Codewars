@@ -1,20 +1,25 @@
-def likes(names):
-    if len(names) == 0:
-        phrase = 'no one likes this'
-        return phrase
-    elif len(names) == 1:
-        single_person_phrase = f'{names[0]} likes this'
-        return single_person_phrase
-    elif len(names) == 2:
-        phrase_of_more_people = f'{names[0]} and {names[1]} like this'
-        return phrase_of_more_people
-    elif len(names) == 3:
-        phrase_of_more_people = f'{names[0]}, {names[1]} and {names[2]} like this'
-        return phrase_of_more_people
+from functools import reduce
+
+def generate_hashtag(s:str):
+    if validation_string(s):
+        return False
+    
+    text = list(map(concatenate_capitalize, s.split(" ")))
+    concatenate_formed_text = reduce(lambda ac, x: ac + x, text)
+    text_hashtag = f"#{concatenate_formed_text}"
+    
+    if len(text_hashtag) <= 140 and text_hashtag != "":
+        return text_hashtag
     else:
-        name1, name2, *_ = names
-        phrase_of_more_people = f'{name1}, {name2} and {len(_)} others like this'
-        return phrase_of_more_people
-list_names = ['Alex', 'Jacob', 'Mark', 'Max']
-output = likes(list_names)
-print(output)
+        return False
+    
+def validation_string(string):
+    if string == '':
+        return True
+    
+def concatenate_capitalize(word:str):
+    return word.capitalize()
+text_example = " Hello there thanks for trying my Kata"
+text_example_output = generate_hashtag(text_example)
+
+print(text_example_output)
