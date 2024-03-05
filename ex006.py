@@ -1,26 +1,27 @@
-def decode(r):
-    list_word = [
-        'a', 'b', 'c', 'd', 'e', 'f',
-        'g', 'h', 'i', 'j', 'k', 'l',
-        'm', 'n', 'o', 'p', 'q', 'r',
-        's', 't', 'u', 'v', 'w', 'x',
-        'y', 'z'
-    ]
-    num = ''
-    string = ''
-    new_string = ''
-    for i in r:
-        if i.isnumeric():
-            num += i
-        else:
-            string += i
-    exemple = "uogbucwnddunktsjfanzlurnyxmx"
-    
-        index_string = list_word.index(s)
-        calculo = index_string * int(num) % 26
-        
-    
-        
-    return 0
 
-output = decode("6015ekx")#decode("1273409kuqhkoynvvknsdwljantzkpnmfgf")
+from math import pi, sqrt 
+def decorator_function(func):
+    
+    def inner_function(*args, **kwargs):
+        if validation_values(*args):
+            return 'Valor inválido'
+        return func(*args, **kwargs)
+    
+    return inner_function
+
+@decorator_function
+def ellipse(a, b):
+    
+    
+    area = pi * (a * b)
+    perimeter = pi * (3/2*(a+b) - sqrt(a*b))
+    return f"Area: {area:.1f}, perimeter: {perimeter:.1f}"
+
+def validation_values(*args):
+    for arg in args:
+        if arg < 0:
+            return True
+
+output = ellipse(12, 78)
+print(output)
+

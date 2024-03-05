@@ -1,3 +1,10 @@
+<<<<<<< Updated upstream
+=======
+# Se o resultado final tiver mais de 140 caracteres ele deverá retornar false.
+# Deve começar com uma hashtag ( #).
+# Todas as palavras devem ter a primeira letra maiúscula.
+# Se a entrada ou o resultado for uma string vazia, ela deverá retornar false.
+>>>>>>> Stashed changes
 from functools import reduce
 
 def generate_hashtag(s:str):
@@ -22,4 +29,8 @@ def concatenate_capitalize(word:str):
 text_example = " Hello there thanks for trying my Kata"
 text_example_output = generate_hashtag(text_example)
 
+<<<<<<< Updated upstream
 print(text_example_output)
+=======
+print(text_example_output)
+>>>>>>> Stashed changes

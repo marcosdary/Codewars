@@ -1,20 +1,24 @@
-# https://www.codewars.com/kata/628d253eb110f3270a8a1789/train/python
-def determinateValue(x, y, n):
+from functools import reduce
+def decorator_find_summands(func):
+    def inner_function(*args, **kwargs):
+        if size_list(*args):
+            return f'Incorrect length for n = {args}'
+        return func(*args, **kwargs)
+    return inner_function
 
-    return 0
+@decorator_find_summands
+def find_summands(n):
+    s = reduce(lambda ac, i: ac + i, n, 0)
+    p = len(n)**3
+    if s == p:
+        return p
+    else:
+        return f'Incorrect sum for n = {n}'
+    
+def size_list(sent_list):
+    if len(sent_list) < 2:
+        return True
 
-lista = [
-    [ 1,  2,  6,  7, 15],
-    [ 3,  5,  8, 14, 16],
-    [ 4,  9, 13, 17, 22],
-    [10, 12, 18, 21, 23],
-    [11, 19, 20, 24, 25]
-]
-for linha in lista:
-    for coluna in linha:
-        print(coluna, linha.index(coluna), lista.index(linha))
-    print()
-
-
-
-        
+example = [7, 9, 11]
+output = find_summands(example)
+print(output)
