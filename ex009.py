@@ -34,5 +34,4 @@ def formatted_version(values):
        
 
 print(goldbach_partitions(15))  
-print(is_prime(15))
 

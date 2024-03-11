@@ -1,14 +1,3 @@
-<<<<<<< Updated upstream
-from functools import partial
-def decorator_time(func):
-    
-    def inner_function(*args, **kwargs):
-        for arg in args:
-            validation_time(arg)
-        return func(*args, **kwargs)
-    return inner_function
-
-=======
 # A quantidade de tempo é sempre arredondada para o número inteiro mais próximo. 
 # Por exemplo, se o tempo for realmente 11,73 horas atrás, o valor de retorno será “11 horas atrás”.
 
@@ -31,7 +20,6 @@ def decorator_time(func):
         return func(*args, **kwargs)
     return inner_function
 
->>>>>>> Stashed changes
 @decorator_time
 def to_pretty(seconds):
     calculation_time = partial(lambda x, y: x / y, seconds)
