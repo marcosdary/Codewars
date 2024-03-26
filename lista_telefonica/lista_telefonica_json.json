@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nome": "Marcos",
+        "sobrenome": "Wyliam",
+        "telefone": "(98) 98679-7456",
+        "email": "marcos@gmail.com"
+    },
+    {
+        "id": 2,
+        "nome": "Caio",
+        "sobrenome": "Fernando",
+        "telefone": "(89) 94512-3678",
+        "email": "caio@hotmail.com"
+    }
+]
