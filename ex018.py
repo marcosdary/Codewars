@@ -1,5 +1,3 @@
-# Sistema de Reserva de Passagens Aéreas
-
 class PassagemArea:
     def __init__(self, origem, destino, data, assentos_disponiveis) -> None:
         self.origem = origem
