@@ -1,0 +1,56 @@
+[
+    {
+        "matricula": 1236,
+        "total_vendas": 45630.0,
+        "salario": 1254.0,
+        "salario_total": 5360.7
+    },
+    {
+        "matricula": 3678,
+        "total_vendas": 12364.0,
+        "salario": 2145.0,
+        "salario_total": 3010.48
+    },
+    {
+        "matricula": 2136,
+        "total_vendas": 4562.0,
+        "salario": 2136.0,
+        "salario_total": 2136.0
+    },
+    {
+        "matricula": 7894,
+        "total_vendas": 3645.0,
+        "salario": 1247.0,
+        "salario_total": 1247.0
+    },
+    {
+        "matricula": 3645,
+        "total_vendas": 78946.0,
+        "salario": 3654.0,
+        "salario_total": 10759.14
+    },
+    {
+        "matricula": 1247,
+        "total_vendas": 36987.0,
+        "salario": 4562.0,
+        "salario_total": 7890.83
+    },
+    {
+        "matricula": 3654,
+        "total_vendas": 7894.0,
+        "salario": 3789.0,
+        "salario_total": 4183.7
+    },
+    {
+        "matricula": 4565,
+        "total_vendas": 3647.0,
+        "salario": 2100.0,
+        "salario_total": 2100.0
+    },
+    {
+        "matricula": 3698,
+        "total_vendas": 4567.0,
+        "salario": 1230.0,
+        "salario_total": 1230.0
+    }
+]
