@@ -1,11 +1,12 @@
 def potencia_da_objeto(voltz, corrente): # operacao_realizada = '1'
     return voltz * corrente
-    
+
+ 
 
 def corrente_eletrica(quantidade_eletrons, tempo): # operacao_realizada = '2'
     try:
         delta_quantidade = quantidade_eletrons * 1.6
-        return delta_quantidade/tempo
+        return round(delta_quantidade/tempo, 3)
     
     except ZeroDivisionError: 
         return 'Não há divisão por 0'
@@ -13,7 +14,7 @@ def corrente_eletrica(quantidade_eletrons, tempo): # operacao_realizada = '2'
 
 def resistencia_do_resistor(resistividade, comprimento, area):  # operacao_realizada = '3'
     try:
-        return resistividade*(comprimento/area)
+        return round(resistividade*(comprimento/area), 2)
     
     except ZeroDivisionError:
         return '\n\tNão há divisão por 0'
