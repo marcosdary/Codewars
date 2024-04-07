@@ -1,4 +1,3 @@
-
 class MassaCorporal:
     def __init__(self, nome_completo, peso, altura, sexo, idade):
         self.nome_completo = nome_completo
