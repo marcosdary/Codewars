@@ -16,10 +16,5 @@ class PassagemArea:
         return f'Detalhes\n\tOrigem: {self.origem}\n\tDestino: {self.destino}\n\tData: {self.data}\n\tAssentos Disponíveis: {self.assentos_disponiveis}'
         
 latam = PassagemArea('São Paulo', 'Estados Unidos', "12/10/2025", 100)
-print(latam)
-print()
 print(latam.reserva_assento(8))
-print()
-print(latam.reserva_assento(9))
-print()
-print(latam.reserva_assento(100))
+print(latam)
