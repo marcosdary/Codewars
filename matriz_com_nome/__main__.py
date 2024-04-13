@@ -1,11 +1,3 @@
-"""
-1. Faça um programa que leia uma matriz A que armazene 12 nomes de
-pessoas informados pelo usuário. O algoritmo deverá procurar na matriz
-se existe um determinado nome que foi informado pelo usuário. Caso
-exista, exibir uma mensagem avisando que encontrou e em qual posição
-da matriz. Caso não, exibir uma mensagem de que o nome não foi
-encontrado.
-"""
 import os 
 import json
 
@@ -42,11 +34,12 @@ class Pessoa:
 print("\tNOMES EM UM LISTA")   
 print("-="*15)
 while True:
-    sair = input('Para sair digite "s": ')
+    
     nome = Pessoa(input("Digite seu nome: "))
     if sair == 's':
         print("\tFlw...")
         break
+    sair = input('Para sair digite "s": ')
     nomes.append(nome.__dict__)
     to_write_json(nomes)
     
