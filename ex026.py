@@ -98,9 +98,6 @@ class Hospede:
     def lista_reservas(self):
         return self.__lista_reservas
     
-    def historico_reservas(self):
-        pass
-    
     def inserir_reserva(self, quarto, hotel, data_reserva):
         filtro_hotel = list(filter(lambda h: h.disponibilidade is True, hotel.lista_quartos))
         if quarto in filtro_hotel:
@@ -119,15 +116,18 @@ class Hospede:
             if reserva['quarto'] == quarto:
                 index = self.__lista_reservas.index(reserva)
                 self.__lista_reservas.pop(index)
-                
-        return '\tReserva cancelada com sucesso'
+                print('\tReserva cancelada com sucesso')
+                return ''
+        print('\tReserva não encontrada')
+        return ''
     
     def gasto_total(self):
         v = 0
         for reserva in self.__lista_reservas:
-            print(f"Quarto: {reserva['quarto'].nome}\nPreço: {reserva['quarto'].preco}\n") 
+            print(f"Quarto: {reserva['quarto'].tipo_quarto}\nPreço: {reserva['quarto'].preco}\n") 
             v += reserva['quarto'].preco
         print(f"Total gasto: {v}\n")
+        return ''
     
     def __str__(self) -> str:
         print(f'\tCliente: {self.nome}\n\tCPF: {self.cpf}\n')
@@ -184,7 +184,8 @@ hosp.inserir_reserva(quart2, hot, '10/02/2024')
 hosp2 = Hospede('Mário', '123.446.784-21')
 hosp2.inserir_reserva(quart, hot, '12/04/2024')
 hosp2.inserir_reserva(quart3, hot2, '13/02/2024')
-#hosp.cancelar_reserva(quart2)
-#hosp.cancelar_reserva(quart4)
-print(hot2.lista_reservas[0]['quarto'])
-print(hosp2)
+#hosp2.cancelar_reserva(quart)
+#hosp2.cancelar_reserva(quart)
+
+print(hosp2.gasto_total())
+
