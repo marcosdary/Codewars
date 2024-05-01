@@ -1,0 +1,14 @@
+[
+    {
+        "status": "Success",
+        "mensagem": "Motorola G12 está ligado"
+    },
+    {
+        "status": "Success",
+        "mensagem": "Galaxy A12 está ligado"
+    },
+    {
+        "status": "Error",
+        "mensagem": "Galaxy A12 está desligado"
+    }
+]
