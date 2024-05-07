@@ -12,5 +12,12 @@
         "sobrenome": "Fernando",
         "telefone": "(89) 94512-3678",
         "email": "caio@hotmail.com"
+    },
+    {
+        "id": 12,
+        "nome": "Carol",
+        "sobrenome": "Fernandes",
+        "telefone": "(98) 91236-4566",
+        "email": "carol@gmail.com"
     }
 ]
