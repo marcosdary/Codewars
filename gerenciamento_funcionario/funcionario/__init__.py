@@ -1,0 +1,1 @@
+from funcionario.funcionario import *
