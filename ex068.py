@@ -74,12 +74,17 @@ class Kelvin:
     def KelvinRomer(self):
         ro = ((self.x - 273.15) * (21/40)) + 7.5
         return ro
+    
+    def KelvinDelisle(self):
+        de = (373.15 - self.x) * 1.5
+        return de
 
     @property
     def operacao(self):
         calculo = {
             'C': self.KelvinCelsius(), 'F': self.KelvinFahrenheit(), 'R': self.KelvinRankine(),
-            'N': self.KelvinNewton(), 'Re': self.KelvinReaumur(), 'Ro': self.KelvinRomer()
+            'N': self.KelvinNewton(), 'Re': self.KelvinReaumur(), 'Ro': self.KelvinRomer(),
+            'De': self.KelvinDelisle()
         }
         return int(calculo.get(self.op))
      
