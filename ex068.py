@@ -357,4 +357,3 @@ def convert_temp(temp, from_scale, to_scale):
         result = conversion_dict.get(from_scale)
         return result.operacao
     return temp
-print(convert_temp(-3.71, "R", "Re"))
