@@ -52,5 +52,11 @@
         "total_vendas": 4567.0,
         "salario": 1230.0,
         "salario_total": 1230.0
+    },
+    {
+        "matricula": 456,
+        "total_vendas": 2000.0,
+        "salario": 2100.0,
+        "salario_total": 2100.0
     }
 ]
