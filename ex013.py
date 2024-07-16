@@ -1,5 +1,6 @@
 from itertools import permutations as permutations_str
 
+
 def decorator_permutations(func):
     def inner_function(*args, **kwargs):
         for arg in args:
