@@ -1,0 +1,79 @@
+[
+    {
+        "nome": "Arroz Biju",
+        "validade": "23/12/2024",
+        "preco": "5.45",
+        "quantidade": "233",
+        "id_": 1
+    },
+    {
+        "nome": "Feijão Preto",
+        "validade": "15/08/2023",
+        "preco": "7.89",
+        "quantidade": "150",
+        "id_": 2
+    },
+    {
+        "nome": "Macarrão Spaghetti",
+        "validade": "01/05/2024",
+        "preco": "4.50",
+        "quantidade": "300",
+        "id_": 3
+    },
+    {
+        "nome": "Farinha de Trigo",
+        "validade": "10/11/2024",
+        "preco": "3.75",
+        "quantidade": "500",
+        "id_": 4
+    },
+    {
+        "nome": "Açúcar Refinado",
+        "validade": "12/09/2023",
+        "preco": "2.60",
+        "quantidade": "400",
+        "id_": 5
+    },
+    {
+        "nome": "Óleo de Soja",
+        "validade": "20/10/2023",
+        "preco": "8.20",
+        "quantidade": "200",
+        "id_": 6
+    },
+    {
+        "nome": "Café Torrado e Moído",
+        "validade": "05/07/2023",
+        "preco": "10.50",
+        "quantidade": "180",
+        "id_": 7
+    },
+    {
+        "nome": "Leite Condensado",
+        "validade": "28/02/2024",
+        "preco": "4.99",
+        "quantidade": "250",
+        "id_": 8
+    },
+    {
+        "nome": "Creme de Leite",
+        "validade": "18/12/2023",
+        "preco": "3.89",
+        "quantidade": "230",
+        "id_": 9
+    },
+    {
+        "nome": "Sal Refinado",
+        "validade": "31/01/2025",
+        "preco": "1.99",
+        "quantidade": "600",
+        "id_": 10
+    },
+    {
+        "nome": "Amendoim",
+        "validade": "23/12/2024",
+        "preco": "4.56",
+        "quantidade": "234",
+        "id_": 11
+    }
+]
