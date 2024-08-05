@@ -2,7 +2,7 @@ import json
 from functools import reduce
 import os
 
-caminho = os.path.join("C:\\Users\\Marcos e Matheus\\Documents\\GitHub\\Codewars\\gerenciador_produtos\\data_funcionario.json")
+caminho = os.path.join(__file__)
 
 with open(caminho, 'r', encoding='utf-8') as file:
     datas = json.load(file)
