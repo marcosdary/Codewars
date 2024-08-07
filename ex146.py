@@ -1,7 +1,3 @@
-# 1 - Boa
-# 2 - Regular 
-# 3 - Ruim
-
 pesquisa = [
     (7213.53, 1), (4386.19, 2), (3642.11, 1), (9264.34, 3), (8117.66, 1),
     (7061.82, 2), (5861.39, 3), (5216.11, 2), (2145.94, 1), (8754.22, 2),
@@ -40,6 +36,7 @@ def dados_pesquisa(dados: list[tuple]) -> dict:
                 qualidade['Ruim'] += 1
 
         salario += salario_dado
+
     escolha_maior = max(qualidade.items(), key=lambda k: k[1]) if qualidade['Boa'] != qualidade['Regular'] != qualidade['Ruim'] else 0
     return {'qualidade_do_produto': escolha_maior[0], 'salario': round(salario / tamanho, 2)}
 
