@@ -1,0 +1,37 @@
+{
+    "nome": "João Silva",
+    "idade": 30,
+    "email": "joao.silva@example.com",
+    "enderecos": [
+        {
+            "tipo": "residencial",
+            "logradouro": "Rua das Flores",
+            "numero": 123,
+            "bairro": "Jardim Primavera",
+            "cidade": "São Paulo",
+            "estado": "SP",
+            "cep": "12345-678"
+        },
+        {
+            "tipo": "comercial",
+            "logradouro": "Avenida Paulista",
+            "numero": 456,
+            "bairro": "Cerqueira César",
+            "cidade": "São Paulo",
+            "estado": "SP",
+            "cep": "98765-432"
+        }
+    ],
+    "telefone": null,
+    "habilidades": [
+        "programação",
+        "design",
+        "gestão de projetos"
+    ],
+    "ativo": true,
+    "detalhesAdicionais": {
+        "nacionalidade": "Brasileiro",
+        "estadoCivil": "Solteiro",
+        "dataNascimento": "1994-07-15"
+    }
+}
